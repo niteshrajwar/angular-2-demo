@@ -1,0 +1,66 @@
+<div class="container">
+	<h1 class="text-primary">Hello {{parentName}} </h1>
+	<h3>total income:{{totalIncome()}}
+          <span class="pull-right"><button class="btn btn-info"
+           (click)="winner(user)"  >winner</button></span>
+
+
+	 </h3>
+<div class="container">
+	<h2>Welcome to my app !!</h2></div>
+<div class="container">
+	
+	<table>
+		<thead>
+			<tr>
+			<th>Image</th>	
+			<th>Name</th>
+			<th>Date of Birth</th>
+			<th>Income</th>
+			<th>Description</th>
+			<th>VOTE</th>
+		</tr>
+
+		</thead>
+		<tbody>
+			<tr *ngFor="let user of users" [ngClass]="{'borderme':user.isWorking}">
+
+			<td ><img [src]="user.image" width="150px" height="150px"> </td>
+           <td> <span [ngStyle]="styleUser" 
+           	[ngClass]="['feature','working']" >
+
+				{{user.firstName | uppercase}} {{user.lastName | uppercase}}</span> </td>
+
+		  <td><span [ngStyle]="{'color':user.color}">
+		  {{user.dob | date:'dd/MM/yyyy'}}</span>  </td>
+		  <td >
+		  <span *ngIf="user.isWorking===true">
+		   {{user.salary | doubleMe}} </span></td>
+		  <td>
+		 <!--  <button class=" btn btn-info" (click)="knowMore(user)">know more</button>
+		  --> 
+		  <button class=" btn btn-info" (click)="knowMore(user)">know more</button>
+		  </td>
+             <td>
+             	<!-- <input type="number" [value]="user.vote" 
+             	(change)="user.vote=$event.target.value">
+             	<h2>{{user.vote}} </h2> -->
+             	
+             	<input type="number" 
+             	[(ngModel)]="user.vote" 
+             	class="form-control">
+                    <h2>{{user.vote}} </h2>
+             </td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</div>
+
+<!-- <div [ngSwitch]="'a'">
+	<div ngSwitchWhen="'c'">ouput1</div>
+	<div ngSwitchWhen="'a'">output2</div>
+	<div ngSwitchWhen="'exp_3'">output3</div>
+	<div ngSwitchdefault>default</div>
+
+</div> -->

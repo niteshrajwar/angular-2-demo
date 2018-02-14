@@ -1,0 +1,12 @@
+.ng-dirty.ng-valid[type="text"]{
+  border-bottom: 2px green solid;
+}
+.ng-dirty.ng-valid[type="password"]{
+  border-bottom: 2px green solid;
+}
+.ng-dirty.ng-invalid[type="text"]{
+  border-bottom: 2px red solid;
+}
+.ng-dirty.ng-invalid[type="password"]{
+  border-bottom: 2px red solid;
+}

@@ -1,0 +1,39 @@
+{
+
+"data":[{
+
+  	 "firstName":"Bill",
+  	  "lastName":"Gates",
+  	  "dob":"Jan 1 1965",
+  	  "isWorking":false,
+  	 " salary":1000000,
+  	  "company" :"microsoft",
+  	 " image":"images/bill.jpg",
+  	  "vote":16,
+  	  "color": "blue " 	
+          },
+  	    {
+
+  	  "firstName":"Steve",
+  	  "lastName":"Jobs",
+  	  "dob": "Jan 1 1975",
+  	  "isWorking":false,
+      "salary":1000000,
+  	 "company" :"Apple",
+  	  "image":"images/steve.jpg",
+     " vote":13,
+  	  "color": "green"
+  	    },
+  	    {
+
+  	  "firstName":"Mark",
+  	  "lastName":"Juckerburg",
+  	  "dob": "Jan 1 1985",
+  	  "isWorking":true,
+  	  "salary":1000000,
+  	  "company" :"Facebook",
+  	  "image":"images/mark.jpg",
+  	 " vote":26,
+  	  "color": "lightblue"
+  	    }]
+}

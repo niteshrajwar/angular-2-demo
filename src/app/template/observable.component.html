@@ -1,0 +1,16 @@
+<div class="container">
+	<h2>Observale demo</h2>
+	<button class="btn btn-default"
+		(click)="startObserver()">start observer</button>
+		<button class="btn btn-default"
+		(click)="stopObserver()">stop observer</button>
+		
+		<h2>values:</h2>
+		<ul class="list-unstyled">
+			
+			<li *ngFor="let value of values">
+				{{value}}
+			</li>
+		</ul>
+		
+</div>

@@ -1,0 +1,14 @@
+h2 {
+  color: red;
+
+}
+.feature{
+	font-size: 16pt;
+}
+.working{
+	font-weight: bold;
+	font-style: italic;
+}
+.borderme{
+	border:2px red dotted;
+}
